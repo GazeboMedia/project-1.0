@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My demo project</title>
+        <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script data-main="scripts/build" src="scripts/require.js"></script>
+    </head>
+    <body>
+        <h1>My demo project</h1>
+        <h2>This project uses requirejs, Grunt, Handlebars and sass</h2>
+        <script id="some-template" type="text/x-handlebars-template">
+		  <table>
+		    <thead>
+		      <th>Username</th>
+		      <th>Real Name</th>
+		      <th>Email</th>
+		    </thead>
+		    <tbody>
+		      {{#users}}
+		        <tr>
+		          <td>{{username}}</td>
+		          <td>{{firstName}} {{lastName}}</td>
+		          <td>{{email}}</td>
+		        </tr>
+		      {{/users}}
+		    </tbody>
+		  </table>
+		</script>
+
+    </body>
+</html>

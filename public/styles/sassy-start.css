@@ -1,0 +1,29 @@
+/* SCSS Document */
+/* this is my sass file */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333; }
+  body div, body .extradiv {
+    color: #9C3;
+    border: 2px solid; }
+  body .undelined {
+    border-bottom: 2px solid; }
+  body .extradiv {
+    border-color: #9C3; }
+  body .sidebar {
+    float: left;
+    width: 31.25%; }
+  body .content {
+    float: right;
+    width: 62.5%; }
+  body .extra {
+    border-color: #c4c4c4;
+    background: blue; }
+
+/*# sourceMappingURL=sassy-start.css.map */

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+/* this is my sass file */
+
+@import 'partial';
+
+$body-colour: #333;
+$div-colour: #9C3;
+
+@mixin border($thickness) {
+	border: $thickness solid;
+}
+@mixin underline($thickness) {
+	border-bottom: $thickness solid;
+}
+body {
+	color: $body-colour;
+	div {
+		color: $div-colour;	
+		@include border(2px);
+	}
+	.undelined {
+		@include underline(2px);
+	}
+	.extradiv {
+		@extend div;
+		border-color: $div-colour;
+	}
+	.sidebar {
+		float: left;
+		width: 300px / 960px * 100%; 
+	}
+	.content {
+		float: right;
+		width: 600px / 960px * 100%;
+	}
+	.extra {
+		border-color: #c4c4c4;
+		background: blue;
+	}
+	.style-handlebars {
+	
+	}
+}
