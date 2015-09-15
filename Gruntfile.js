@@ -46,5 +46,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-handlebars');
    
-  grunt.registerTask('default', ['watch', 'handlebars']);
+  grunt.registerTask('default', ['watch', 'requirejs', 'handlebars']);
 };

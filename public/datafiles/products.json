@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Troursers",
+    "price": 12.99,
+    "properties": [
+      {
+        "colour": "red"
+      },
+      {
+        "styles": "casual"
+      },
+      {
+        "sizes": [
+          8,
+          10,
+          12,
+          14
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Blouse",
+    "price": 19.99,
+    "properties": [
+      {
+        "colour": "green"
+      },
+      {
+        "styles": "smart"
+      },
+      {
+        "sizes": [
+          8,
+          10,
+          12,
+          14
+        ]
+      }
+    ]
+  }
+]

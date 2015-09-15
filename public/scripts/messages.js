@@ -1,5 +1,5 @@
 // message.js
-define(['jquery', 'handlebars'],function ($, Handlebars) {
+define(['jquery', 'handlebars', 'backbone'],function ($, Handlebars, Backbone) {
     
     	// try some handlebars
 		var data = { users: [
@@ -10,6 +10,9 @@ define(['jquery', 'handlebars'],function ($, Handlebars) {
 
 	  var source   = $("#some-template").html();
 	  var template = Handlebars.compile(source);
+
+	  
+	  
 	  
 	  //$("#content-placeholder").html(template(data));
 	   $(document.body).append(template(data));

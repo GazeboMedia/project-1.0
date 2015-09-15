@@ -10,8 +10,7 @@ ol {
 body {
   color: #333; }
   body div, body .extradiv {
-    color: #9C3;
-    border: 2px solid; }
+    color: #9C3; }
   body .undelined {
     border-bottom: 2px solid; }
   body .extradiv {
@@ -25,5 +24,15 @@ body {
   body .extra {
     border-color: #c4c4c4;
     background: blue; }
+  body .products {
+    width: 960px;
+    margin: 0 auto;
+    position: relative; }
+    body .products .product {
+      position: relative;
+      float: left;
+      width: 33.333333%;
+      border: 2px solid grey;
+      padding: 10px; }
 
 /*# sourceMappingURL=sassy-start.css.map */
