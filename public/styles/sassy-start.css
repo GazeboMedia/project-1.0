@@ -8,7 +8,10 @@ ol {
   padding: 0; }
 
 body {
-  color: #333; }
+  color: #333;
+  width: 940px;
+  position: relative;
+  margin: 0 auto; }
   body div, body .extradiv {
     color: #9C3; }
   body .undelined {
@@ -24,6 +27,10 @@ body {
   body .extra {
     border-color: #c4c4c4;
     background: blue; }
+  body main {
+    position: relative;
+    width: 940px;
+    margin: 0 auto; }
   body .products {
     width: 960px;
     margin: 0 auto;

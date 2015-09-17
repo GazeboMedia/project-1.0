@@ -7,6 +7,7 @@ define(function (require) {
     var messages = require('./messages');
     var products = require('./products');
     var listing = require('./listing');
+    var validator = require('./validator');
     // Load library/vendor modules using
     // full IDs, like:
     //var print = require('print');

@@ -19,6 +19,7 @@ define(['jquery', 'handlebars'],function ($, Handlebars) {
 	
 		$.each(data, function(index, element) {
 
+			var elementId = element.id;
 			var name = element.name;
 			var price = element.price;
 			var colour = element.properties[0].colour;
@@ -33,7 +34,7 @@ define(['jquery', 'handlebars'],function ($, Handlebars) {
 
         	$('.products').append(form);
 
-        	products.push({name : name, price: price, colour: colour, styles: styles, sizes: sizes});
+        	products.push({id : elementId, name : name, price: price, colour: colour, styles: styles, sizes: sizes});
     	});
     	var variables = { products: products};
 
@@ -51,11 +52,20 @@ define(['jquery', 'handlebars'],function ($, Handlebars) {
 		var multiply5 = multiplyValues(5);
 		var multiply10 = multiplyValues(10);
 
-		console.log(multiply5(2));  // 7
-		console.log(multiply10(2)); // 12
+		//console.log(multiply5(2));  // 7
+		//console.log(multiply10(2)); // 12
 
 	}
 
-	//var element =  JSON.parse(data[0]);
-	//console.log(element["name"]);
+$(function() {
+// add to cart function
+	$('body').on('submit', '.select-form', function(e) {
+		e.preventDefault();
+		console.log("selected");
+	});
+	// $('body').on('click', '.other-bt', function(event){
+	// 	event.preventDefault();
+	// });
+});
+
 });

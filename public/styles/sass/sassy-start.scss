@@ -16,6 +16,9 @@ $div-colour: #9C3;
 }
 body {
 	color: $body-colour;
+	width: 940px;
+    position: relative;
+    margin: 0 auto;
 	div {
 		color: $div-colour;	
 	}
@@ -40,6 +43,11 @@ body {
 	}
 	.style-handlebars {
 	
+	}
+	main {
+		position: relative;
+		width: 940px;
+		margin: 0 auto;
 	}
 	.products {
 		width: 960px;
